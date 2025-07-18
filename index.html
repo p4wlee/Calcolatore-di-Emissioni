@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon_io/android-chrome-512x512.png">
+    <meta name="description" content="EcoAware: calcolatore per misurare la tua emissione di carbonio derivante dal consumo di energia e dai trasporti.">
+    <meta name="keywords" content="EcoAware, emissione di carbonio, consumo energetico, trasporti, calcolatore delle emissioni di CO2">
+    <meta name="author" content="DavidePaulicelli">
+    <meta name="opengraph:title" content="EcoAware: Calcolatore di emissioni">
+    <meta name="opengraph:description" content="EcoAware: calcolatore per misurare la tua emissione di carbonio derivante dal consumo di energia e dai trasporti.">
+    <meta name="opengraph:image" content="/img/logo.jpg">
+    <meta name="opengraph:url" content="https://EcoAware.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <title>EcoAware: Calcolatore emissioni totali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="/dist/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="/img/logo.jpg" alt="EcoAware Logo">
+    </div>
+
+    <div class="form-container">
+          <form id="form">
+            <div class="kwh-container">
+              <div class="form-kwh-img">
+              </div>
+              <h1>Calcolatore delle emissioni energetiche</h1>
+              <label>Quanti kWh hai consumato lo scorso mese?</label>
+              <input type="number" id="kwh" required>
+              <button type="button" id="calculate-kwh-emissions-btn" class="submit">Calcolo energia CO2 emessa</button>
+              <output class="output" id="kwh-emissions-output"></output>
+            </div>
+            <br>
+
+            <div class="km-container">
+              <div class="form-km-img">
+              </div>
+              <h1>Calcolatore delle emissioni di trasporto</h1>
+              <label>Quanti km hai percorso lo scorso mese?</label>
+              <input type="number" id="km" required>
+              <button type="button" id="calculate-km-emissions-btn" class="submit">Calcola le emissioni di CO2 dei trasporti</button>
+              <output class="output" id="km-emissions-output"></output>
+            </div>
+            <br>
+            <div class="total-emissions-container">
+              <br>
+              <label>Le tue emissioni totali di CO2 (kg):</label>
+              <button type="button" id="total-emissions-btn" class="submit">Calcolo emissioni totali</button>
+              <output class="output" id="total-emissions-output"></output>
+            </div>
+            <br>
+          </form>
+    </div>
+  
+    <script src="/script.js"></script>
+  </body>
+</html>

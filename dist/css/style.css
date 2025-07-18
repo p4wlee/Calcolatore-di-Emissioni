@@ -1,0 +1,110 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+  color: #2E2E2E;
+}
+body .header {
+  background-color: #A5D6A7;
+  padding: 1rem;
+  text-align: center;
+}
+body .header .logo {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+body .form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #E8F5E9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+body .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+body .form-container form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2E7D32;
+  text-align: center;
+}
+body .form-container form label {
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  color: #4F5B62;
+}
+body .form-container form input {
+  padding: 0.5rem;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+body .form-container form input:focus {
+  outline: none;
+  border-color: #2E7D32;
+  box-shadow: 0 0 4px #A5D6A7;
+}
+body .form-container form .submit {
+  background-color: #2E7D32;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+body .form-container form .submit:hover {
+  background-color: #66BB6A;
+}
+body .form-container form .submit:active {
+  background-color: #388E3C;
+}
+body .form-container form .output {
+  display: block;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  background-color: #FFF9C4;
+  border: 1px solid #FDD835;
+  border-radius: 8px;
+  color: #4F5B62;
+}
+body .form-container form .kwh-container,
+body .form-container form .km-container,
+body .form-container form .total-emissions-container {
+  margin-bottom: 2rem;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+body .form-container form .kwh-container .form-kwh-img,
+body .form-container form .kwh-container .form-km-img,
+body .form-container form .km-container .form-kwh-img,
+body .form-container form .km-container .form-km-img,
+body .form-container form .total-emissions-container .form-kwh-img,
+body .form-container form .total-emissions-container .form-km-img {
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+body .form-container form .kwh-container .form-kwh-img,
+body .form-container form .km-container .form-kwh-img,
+body .form-container form .total-emissions-container .form-kwh-img {
+  background-image: url("/img/energia.jpeg");
+}
+body .form-container form .kwh-container .form-km-img,
+body .form-container form .km-container .form-km-img,
+body .form-container form .total-emissions-container .form-km-img {
+  background-image: url("/img/trasporto.jpeg");
+}/*# sourceMappingURL=style.css.map */
