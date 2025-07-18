@@ -101,10 +101,10 @@ body .form-container form .total-emissions-container .form-km-img {
 body .form-container form .kwh-container .form-kwh-img,
 body .form-container form .km-container .form-kwh-img,
 body .form-container form .total-emissions-container .form-kwh-img {
-  background-image: url("/img/energia.jpeg");
+  background-image: url("../../img/energia.jpeg");
 }
 body .form-container form .kwh-container .form-km-img,
 body .form-container form .km-container .form-km-img,
 body .form-container form .total-emissions-container .form-km-img {
-  background-image: url("/img/trasporto.jpeg");
+  background-image: url("../../img/trasporto.jpeg");
 }/*# sourceMappingURL=style.css.map */
