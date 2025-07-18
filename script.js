@@ -18,7 +18,7 @@ function calcoloEmissioniTotali (kWh, km) {
 // Event listener per pulsante energia
 document.getElementById("calculate-kwh-emissions-btn").addEventListener('click', () => {
     const kWh = parseFloat(document.getElementById("kwh").value);
-      if (isNaN(kWh) || (kWh < 0)) {
+      if (isNaN(kWh) || (kWh <= 0)) {
     alert("Inserisci un numero valido");
     return;
       }
@@ -29,7 +29,7 @@ document.getElementById("calculate-kwh-emissions-btn").addEventListener('click',
 // Event listener per pulsante trasporto
 document.getElementById("calculate-km-emissions-btn").addEventListener('click', () =>{
     const km = parseFloat(document.getElementById("km").value);
-      if (isNaN(km) || (km < 0)) {
+      if (isNaN(km) || (km <= 0)) {
     alert("Inserisci un numero valido");
     return;
       }
@@ -42,7 +42,7 @@ document.getElementById("calculate-km-emissions-btn").addEventListener('click', 
 document.getElementById("total-emissions-btn").addEventListener('click', () => {
     const kWh = parseFloat(document.getElementById("kwh").value);
     const km = parseFloat(document.getElementById("km").value);
-      if (isNaN(kWh) || (kWh < 0) || isNaN(km) || (km < 0)){
+      if (isNaN(kWh) || (kWh <= 0) || isNaN(km) || (km <= 0)){
     alert ("Ricontrollare i valori inseriti nei campi precedenti");
     return;
       }
